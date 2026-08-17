@@ -1,148 +1,91 @@
-# dirstructx – Directory Structure Generator 📂
+# dirstructx
 
-**dirstructx** is a Python package that generates structured representations of a directory. It supports multiple output formats such as **JSON, YAML, and tree-like structures**, making it useful for documenting project structures or analyzing filesystem layouts.
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/dirstructx) [![KDE Eco](https://img.shields.io/badge/KDE%20Eco-certified-brightgreen?logo=kde&logoColor=white&style=flat-square)](https://eco.kde.org/) [![Blue Angel](https://img.shields.io/badge/Blue%20Angel-DE--UZ%20215-0055a4?style=flat-square)](https://www.blauer-engel.de/en/certification/criteria) [![Energy](https://api.green-coding.io/v1/ci/badge/get?repo=Interested-Deving-1896%2Fdirstructx&branch=main&workflow=eco-audit.yml)](https://metrics.green-coding.io/ci-index.html)
 
-## ✨ Features
-- **Generate directory structures** recursively with flexible formatting
-- **Supports multiple output formats:**
-  - `json` (machine-readable)
-  - `yaml` (configuration-friendly)
-  - `tree` (human-readable)
-- **CLI Usage** for quick execution in the terminal
-- **Library Usage** for integration into Python projects
-- **Custom Sorting Options:**  
-  - List **files before directories** or **directories first**  
-  - Sort alphabetically or keep the natural order
 
----
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-## 🛠 Installation
+## Architecture
 
-To install **dirstructx**, clone the repository and install dependencies:
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-```sh
-git clone https://github.com/muldercw/dirstructx.git
+## Install
+
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
+
+```bash
+git clone https://github.com/Interested-Deving-1896/dirstructx.git
 cd dirstructx
-pip install -r requirements.txt
 ```
 
-Or install via `pip`:
+## Usage
 
-```sh
-pip install dirstructx
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
+
+## Configuration
+
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
+
+## CI
+
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
+
+## Mirror chain
+
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/dirstructx`](https://github.com/Interested-Deving-1896/dirstructx) and mirrored through:
+
+```
+Interested-Deving-1896/dirstructx  ──►  OpenOS-Project-OSP/dirstructx  ──►  OpenOS-Project-Ecosystem-OOC/dirstructx
 ```
 
----
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
 
-## 🚀 Usage
+## Contributors
 
-You can use **dirstructx** via **CLI** or as a **Python library**.
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
 
-### 📌 CLI Usage
+## Origins
 
-Run `dirstructx` on any directory:
+<!-- AI:start:origins -->
+_Original project — no upstream influences recorded._
+<!-- AI:end:origins -->
 
-```sh
-python -m dirstructx /path/to/project --format tree
-```
+## Resources
 
-Available output formats:
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
 
-```sh
-python -m dirstructx /path/to/project --format json
-python -m dirstructx /path/to/project --format yaml
-python -m dirstructx /path/to/project --format tree
-```
+## Accessibility
 
-To redirect output to a file:
+<!-- AI:start:accessibility -->
+This repo uses automated accessibility auditing via `check-accessibility.yml`.
 
-```sh
-python -m dirstructx /path/to/project --format tree > output.txt
-```
+Checks include: CODEOWNERS ownership coverage, README screen-reader compatibility,
+WCAG 2.1 AA HTML compliance, audio overview (espeak-ng), and Braille output (liblouis).
 
----
 
-### 📜 Example Output
 
-#### JSON Output (`--format json`)
-```json
-{
-    "README.md": null,
-    "setup.py": null,
-    "src": {
-        "__init__.py": null,
-        "main.py": null,
-        "utils": {
-            "helpers.py": null,
-            "formatters.py": null
-        }
-    }
-}
-```
 
-#### YAML Output (`--format yaml`)
-```yaml
-README.md: null
-setup.py: null
-src:
-  __init__.py: null
-  main.py: null
-  utils:
-    helpers.py: null
-    formatters.py: null
-```
+Run the [Check Accessibility](https://github.com/Interested-Deving-1896/dirstructx/actions/workflows/check-accessibility.yml)
+workflow to generate the first report and accessibility artifacts.
+See [DOCS/accessibility.md](https://github.com/Interested-Deving-1896/dirstructx/blob/main/DOCS/accessibility.md) for the full reference.
+<!-- AI:end:accessibility -->
 
-#### Tree Output (`--format tree`)
-```
-├── README.md
-├── setup.py
-└── src
-    ├── __init__.py
-    ├── main.py
-    └── utils
-        ├── helpers.py
-        └── formatters.py
-```
+## License
 
----
-
-## 🖥️ Library Usage
-
-You can also use `dirstructx` in your Python scripts:
-
-```python
-from dirstructx import generate_structure
-
-directory_path = "/path/to/project"
-structure = generate_structure(directory_path)
-
-print(structure)  # Prints the directory structure as a dictionary
-```
-
-To format the output in JSON:
-
-```python
-import json
-print(json.dumps(structure, indent=4))
-```
-
-Or in YAML:
-
-```python
-import yaml
-print(yaml.dump(structure, default_flow_style=False))
-```
-
----
-
-## 📝 License
-
-This project is licensed under the **MIT License**.
-
----
-
-## 📫 Contact
-
-For any issues or feature requests, please open an issue on [GitHub](https://github.com/muldercw/dirstructx).
-
-Happy coding! 🚀
+<!-- AI:start:license -->
+[MIT](https://github.com/Interested-Deving-1896/dirstructx/blob/main/LICENSE) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
