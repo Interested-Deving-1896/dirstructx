@@ -57,7 +57,7 @@ Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-
 | Contributor | Commits |
 |---|---|
 | [@muldercw](https://github.com/muldercw) | 3 |
-| [@Interested-Deving-1896](https://github.com/Interested-Deving-1896) | 2 |
+| [@Interested-Deving-1896](https://github.com/Interested-Deving-1896) | 3 |
 <!-- AI:end:contributors -->
 
 ## Origins
